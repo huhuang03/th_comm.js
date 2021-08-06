@@ -5,6 +5,7 @@
   "main": "lib/index.js",
   "scripts": {
     "build": "tsc",
+    "prepublish": "yarn run build",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
