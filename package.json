@@ -1,11 +1,12 @@
 {
   "name": "@huhuang03/th_comm",
-  "version": "0.0.1",
+  "version": "0.0.2-rc1",
   "description": "js common utils",
   "main": "lib/index.js",
   "scripts": {
     "build": "tsc",
     "prepublish": "yarn run build",
+    "s_publish": "npm publish --access public",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
