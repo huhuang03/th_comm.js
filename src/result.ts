@@ -2,7 +2,7 @@ class Result {
     code: number = 0;
     msg: string = "";
 
-    constructor(code: number, msg: string) {
+    constructor(code: number = 0, msg: string = "") {
         this.code = code;
         this.msg = msg;
     }
