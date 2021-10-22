@@ -1,4 +1,10 @@
+export function ms() {
+  return new Date().getTime();
+}
+
 /**
+ * 其实moment.js有简便
+ *
  * return the str time passed
  * 刚刚 < 1分
  * xx分前 < 1小时

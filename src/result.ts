@@ -1,6 +1,8 @@
-class Result {
+// any better idea which that can have an data??
+class Result<T> {
     code: number = 0;
     msg: string = "";
+    data?: T;
 
     constructor(code: number = 0, msg: string = "") {
         this.code = code;
