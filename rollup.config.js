@@ -15,8 +15,6 @@ export default {
         }
     ],
     plugins: [
-        typescript({ objectHashIgnoreUnknownHack: true })
+        typescript()
     ],
-    // this is amazing
-    external: ['react', 'react-native']
 }
