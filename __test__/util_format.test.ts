@@ -1,4 +1,4 @@
-import {formatSize} from './util_format';
+import {formatSize} from '../src/util/util_format';
 
 test('test format1', () => {
   expect(formatSize(1024, 1)).toBe('1KB')
