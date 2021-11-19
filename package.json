@@ -5,7 +5,7 @@
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
   "scripts": {
-    "build": "babel src -d lib",
+    "build": "babel src -d lib --extensions .ts",
     "clean": "rm -rf lib",
     "prepublish": "jest && yarn run build",
     "s_publish": "npm publish --access public",
