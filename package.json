@@ -1,6 +1,6 @@
 {
   "name": "th_comm.js",
-  "version": "0.0.2-rc12",
+  "version": "0.0.2-rc13",
   "description": "js common utils",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
