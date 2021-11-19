@@ -1,4 +1,17 @@
 import {fillTo} from '../lib/index';
+import {groupByNum} from '../src';
+
+test('normal group', () => {
+  const arr = [1, 2, 3, 4, 5];
+  const arrDump = [...arr];
+
+  const rst = groupByNum(arr, 2);
+  const _rst = [[1, 2], [3, 4], [5]]
+  console.log(rst);
+  expect(!(_rst > rst || _rst < rst)).toBe(true);
+
+  expect(!(arr > arrDump || arr > arrDump)).toBe(true);
+})
 
 test('normal fill to', () => {
   const arr = [1, 2,];
