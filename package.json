@@ -9,7 +9,7 @@
     "clean": "rm -rf lib",
     "prepublish": "jest && yarn run build",
     "s_publish": "npm publish --access public",
-    "test": "jest"
+    "test": "yarn run build && jest"
   },
   "files": [
     "lib/*",
