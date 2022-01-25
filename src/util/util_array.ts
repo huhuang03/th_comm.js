@@ -12,17 +12,17 @@ export function groupByNum<T>(arr: Array<T>, num: number): Array<Array<T>> {
   return rst;
 }
 
-export function fillTo<T>(arr: Array<T>, val: T, to: number): Array<T> {
+export function fillTo<T>(arr: Array<T>, val: () => T, to: number): Array<T> {
   const rst = [...arr];
   while (rst.length < to) {
-    rst.push(val);
+    rst.push(val());
   }
   return rst;
 }
 
-export function fillToInPlace<T>(arr: Array<T>, val: T, to: number): Array<T> {
+export function fillToInPlace<T>(arr: Array<T>, val: () => T, to: number): Array<T> {
   while (arr.length < to) {
-    arr.push(val);
+    arr.push(val());
   }
   return arr;
 }
